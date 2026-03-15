@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe + Flask Guide | JC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="inner-wrap">
+
+    <div class="inner-header">
+        <p class="inner-eyebrow">// project</p>
+        <h1>Stripe + Flask Recurring Revenue Guide</h1>
+        <p>A beginner-friendly guide to implementing Stripe subscriptions in a Flask web application.</p>
+    </div>
+
+    <div class="project-detail-body">
+
+        <div class="project-detail-meta">
+            <div class="project-detail-meta-item">
+                <span class="project-detail-meta-label">Year</span>
+                <span class="project-detail-meta-value">2025</span>
+            </div>
+            <div class="project-detail-meta-item">
+                <span class="project-detail-meta-label">Type</span>
+                <span class="project-detail-meta-value">Open-source Guide &middot; README</span>
+            </div>
+            <div class="project-detail-meta-item">
+                <span class="project-detail-meta-label">Links</span>
+                <span class="project-detail-meta-value">
+                    <a href="https://github.com/jconn5803/stripe-recurring-revenue" class="project-detail-link" target="_blank" rel="noopener">GitHub &rarr;</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="project-detail-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Stripe</span>
+            <span class="tag">Guide</span>
+            <span class="tag">Open Source</span>
+        </div>
+
+        <div class="project-detail-section">
+            <h2>Overview</h2>
+            <p>This guide explains how the Stripe integration works in a Flask app and gives a beginner-friendly overview of the Stripe concepts used. It documents the current app flow and where Stripe connects into it.</p>
+            <p>The repository also includes two additional branches for common use cases:</p>
+            <ul>
+                <li>Switch to the <code>free_trial</code> branch for a solution with a 7-day trial period.</li>
+                <li>Switch to the <code>discount_codes</code> branch for a solution with discount code support.</li>
+            </ul>
+        </div>
+
+        <div class="project-detail-section">
+            <h2>Why I Built This</h2>
+            <p>When building GolfOptimise, I implemented the Stripe integration by following YouTube guides. While it worked, it left me without a solid understanding of how Stripe actually works or how to use it correctly in a recurring subscription model for a web application.</p>
+            <p>I then wrote a thorough README so that other Flask developers can learn the best practices when it comes to Stripe &mdash; and so that I can quickly implement a clean Stripe solution in any future project without starting from scratch.</p>
+            <p>This involved reading through the official Stripe documentation, completing the official Stripe training, and then structuring everything I had learned into a logical, digestible format for my future self and others.</p>
+        </div>
+
+        <div class="project-detail-section">
+            <h2>What it covers</h2>
+            <ul>
+                <li>Core Stripe concepts: Customers, Products, Prices, PaymentIntents and Subscriptions</li>
+                <li>Setting up recurring subscription billing in Flask end-to-end</li>
+                <li>Handling Stripe webhooks correctly and securely</li>
+                <li>Managing subscription lifecycle events (upgrades, cancellations, failures)</li>
+                <li>Implementing a free trial period</li>
+                <li>Adding discount code support</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="back-link"><a href="../projects.html">&larr; Back to Projects</a></div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2026 JC</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+.project-detail-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.project-detail-meta-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.project-detail-meta-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+.project-detail-meta-value {
+    color: var(--text-soft);
+}
+.project-detail-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.project-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 2.5rem;
+}
+.project-detail-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+.project-detail-section:last-of-type {
+    border-bottom: none;
+}
+.project-detail-section h2 {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 0.75rem;
+}
+.project-detail-section p {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    line-height: 1.85;
+    margin-bottom: 0.75rem;
+}
+.project-detail-section ul, .project-detail-section ol {
+    color: var(--text-soft);
+    font-size: 0.93rem;
+    line-height: 1.8;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.project-detail-section code {
+    font-family: var(--mono);
+    font-size: 0.85rem;
+    background: var(--accent-glow);
+    border: 1px solid var(--accent-line);
+    color: var(--accent);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+}
+</style>
+</body>
+</html>

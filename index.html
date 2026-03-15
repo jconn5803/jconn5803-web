@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Conn — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+
+<div class="portfolio">
+    <div class="row g-0">
+
+    <!-- ═══════════════════════════════
+         LEFT  — sticky panel
+         ═══════════════════════════════ -->
+    <header class="col-lg-4 p-left">
+        <div class="p-left-top">
+            <p class="p-eyebrow">Portfolio &amp; CV</p>
+            <h1 class="p-name">James Conn</h1>
+            <p class="p-role">Software Developer &amp; AI Data Consultant</p>
+        </div>
+
+        <nav class="p-nav">
+            <a href="#about"          class="p-nav-link active"><span class="nav-bar"></span>About</a>
+            <a href="#projects"       class="p-nav-link"><span class="nav-bar"></span>Projects</a>
+            <a href="#experience"     class="p-nav-link"><span class="nav-bar"></span>Experience</a>
+            <a href="#certifications" class="p-nav-link"><span class="nav-bar"></span>Certifications</a>
+            <a href="#education"      class="p-nav-link"><span class="nav-bar"></span>Education</a>
+            <a href="#hobbies"        class="p-nav-link"><span class="nav-bar"></span>Hobbies</a>
+        </nav>
+
+        <div class="p-socials">
+            <a href="https://linkedin.com/in/conn" target="_blank" class="p-social-card">
+                <span class="p-social-icon">&#128279;</span>
+                <span class="p-social-body">
+                    <span class="p-social-label">Connect on LinkedIn</span>
+                    <span class="p-social-sub">linkedin.com/in/conn</span>
+                </span>
+            </a>
+            <a href="https://github.com/jconn5803" target="_blank" class="p-social-card">
+                <span class="p-social-icon">&#128025;</span>
+                <span class="p-social-body">
+                    <span class="p-social-label">See my code on GitHub</span>
+                    <span class="p-social-sub">github.com/jconn5803</span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ═══════════════════════════════
+         RIGHT — scrollable content
+         ═══════════════════════════════ -->
+    <main class="col-lg-8 p-right" id="main-scroll">
+
+        <!-- ABOUT -->
+        <section class="p-section" id="about">
+            <p class="p-section-label">About</p>
+            <p class="about-text">
+                I am a Python developer focused on data applications and automation. I build automated data pipelines to compile into reports, and production web applications, and have shipped software used by real paying users. My work sits at the intersection of software engineering &amp; data analytics, with a growing interest in AI-enabled tooling.
+            </p>
+            <p class="about-text" style="margin-top:1rem;">
+                Outside of work you will find me on the golf course. The game rewards precision and methodical thinking, both of which translate directly into creating great products.
+            </p>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="p-section" id="projects">
+            <p class="p-section-label">Projects</p>
+            <div class="proj-preview-list">
+
+                <div class="proj-preview-card">
+                    <div class="proj-preview-img">
+                        <img src="photos/gmf_logo_icon_std_2000_2000.png" alt="GolfMembershipFinder" class="proj-preview-photo">
+                    </div>
+                    <div class="proj-preview-body">
+                        <p class="preview-meta">Python · Flask · 2025</p>
+                        <p class="preview-name">GolfMembershipFinder</p>
+                        <p class="preview-desc">The UK's largest golf membership comparison site. Built end-to-end with a SQL-backed Flask application, serving real users and handling live data across hundreds of golf clubs.</p>
+                        <div class="preview-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                        <div class="preview-card-actions">
+                            <a href="https://www.golfmembershipfinder.co.uk" target="_blank" class="btn-live">Live Site &nearr;</a>
+                            <a href="projects/golfmembershipfinder.html" class="btn-more">Why I built this?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-preview-card">
+                    <div class="proj-preview-img">
+                        <img src="photos/flask_stripe.png" alt="Stripe + Flask Guide" class="proj-preview-photo">
+                    </div>
+                    <div class="proj-preview-body">
+                        <p class="preview-meta">Python · Flask · Stripe · 2025</p>
+                        <p class="preview-name">Stripe + Flask Recurring Revenue Guide</p>
+                        <p class="preview-desc">An open-source, beginner-friendly guide to implementing Stripe recurring subscriptions in a Flask application, including a tested, documented codebase.</p>
+                        <div class="preview-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Pytest</span>
+                            <span class="tag">Open Source</span>
+                        </div>
+                        <div class="preview-card-actions">
+                            <a href="https://github.com/jconn5803/stripe-recurring-revenue" target="_blank" class="btn-live">GitHub &nearr;</a>
+                            <a href="projects/stripe-guide.html" class="btn-more">Why I built this?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-preview-card">
+                    <div class="proj-preview-img">
+                        <img src="photos/golfoptimise_logo.png" alt="GolfOptimise" class="proj-preview-photo">
+                    </div>
+                    <div class="proj-preview-body">
+                        <p class="preview-meta">Python · Data · 2025</p>
+                        <p class="preview-name">GolfOptimise</p>
+                        <p class="preview-desc">Processes raw shot-by-shot data through a statistical transformation pipeline to produce strokes gained metrics for elite amateur golfers. Data is stored and queried from a relational database.</p>
+                        <div class="preview-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Pipelines</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Statistics</span>
+                        </div>
+                        <div class="preview-card-actions">
+                            <a href="https://www.golfoptimise.com" target="_blank" class="btn-live">Live Site &nearr;</a>
+                            <a href="projects/golfoptimise.html" class="btn-more">Why I built this?</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="p-section" id="experience">
+            <p class="p-section-label">Experience</p>
+            <div class="preview-list">
+                <a href="experience/stantec.html" class="preview-row preview-row--logo">
+                    <span class="preview-row-date">2024 &ndash;<br>Present</span>
+                    <div class="preview-row-logo">
+                        <img src="photos/stantec_logo.jpg" alt="Stantec" class="preview-logo-img" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <p class="preview-row-title">Digital Consultant</p>
+                        <p class="preview-row-sub">Stantec &middot; AI &amp; Data Engineering</p>
+                        <p class="preview-row-desc">Python developer and data automation specialist at a 30,000+ person global consultancy. I build data pipelines, Azure Machine Learning workflows and analytical tooling for clients including Yorkshire Water, with all work version-controlled and delivered through Azure DevOps.</p>
+                    </div>
+                </a>
+
+                <a href="experience/founder.html" class="preview-row preview-row--logo">
+                    <span class="preview-row-date">2024 &ndash;<br>Present</span>
+                    <div class="preview-row-logo">
+                        <img src="photos/gmf_favicon.png" alt="Personal Projects" class="preview-logo-img" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <p class="preview-row-title">Creator &amp; Software Developer</p>
+                        <p class="preview-row-sub">Personal Projects</p>
+                        <p class="preview-row-desc">Built and deployed production web applications end-to-end in Python and Flask, with SQL databases, Stripe payment integration and cloud hosting. Each project is independently deployed, version-controlled on Git and serves real users.</p>
+                    </div>
+                </a>
+
+                <a href="experience/caddie.html" class="preview-row preview-row--logo">
+                    <span class="preview-row-date">2022 &ndash;<br>2024</span>
+                    <div class="preview-row-logo">
+                        <img src="photos/st_andrews_logo.jpg" alt="St Andrews Links" class="preview-logo-img" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <p class="preview-row-title">Golf Caddie</p>
+                        <p class="preview-row-sub">St Andrews Links</p>
+                        <p class="preview-row-desc">Worked on the course at St Andrews Links, supporting visiting golfers and learning discipline, attention to detail and course management.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section class="p-section" id="certifications">
+            <p class="p-section-label">Certifications</p>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <img src="photos/azure_logo.png" alt="Microsoft Azure" class="cert-logo" onerror="this.style.display='none'">
+                    <div class="cert-body">
+                        <p class="cert-title">Microsoft Certified: Azure Fundamentals</p>
+                        <p class="cert-desc">Foundational certification covering core Azure cloud services, pricing, and governance.</p>
+                        <a href="https://learn.microsoft.com/en-gb/users/jamesconn-9034/credentials/ace6511fa7d8c511?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank" class="cert-link">View certificate &rarr;</a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <img src="photos/github_logo.png" alt="Git &amp; GitHub" class="cert-logo" onerror="this.style.display='none'">
+                    <div class="cert-body">
+                        <p class="cert-title">Git &amp; GitHub Bootcamp</p>
+                        <p class="cert-desc">Comprehensive course covering version control, branching, pull requests, and collaborative workflows.</p>
+                        <a href="https://www.udemy.com/certificate/UC-33a87acd-8487-4245-acbe-892948d49790/" target="_blank" class="cert-link">View certificate &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <p class="cert-note">You can view more courses I have completed on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="p-section" id="education">
+            <p class="p-section-label">Education &amp; Courses</p>
+            <div class="preview-list">
+                <a href="education/st-andrews.html" class="preview-row preview-row--logo">
+                    <span class="preview-row-date">2021 &ndash;<br>2024</span>
+                    <div class="preview-row-logo">
+                        <img src="photos/st_andrews_uni_logo.png" alt="University of St Andrews" class="preview-logo-img" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <p class="preview-row-title">BSc, Mathematics</p>
+                        <p class="preview-row-sub">University of St Andrews</p>
+                        <p class="preview-row-desc">Activities and societies: Golf Club. Honours modules: Computing in Statistics, Computational Numerical Analysis, Applied Statistics, Time Series Analysis, Game Theory, Linear Algebra.</p>
+                    </div>
+                </a>
+
+                <a href="education/st-cuthberts.html" class="preview-row preview-row--logo">
+                    <span class="preview-row-date">2014 &ndash;<br>2021</span>
+                    <div class="preview-row-logo">
+                        <img src="photos/st_cuthberts_ncl_logo.jfif" alt="St Cuthbert's High School" class="preview-logo-img" onerror="this.style.display='none'">
+                    </div>
+                    <div>
+                        <p class="preview-row-title">St Cuthbert's High School</p>
+                        <p class="preview-row-sub">Newcastle upon Tyne</p>
+                        <p class="preview-row-desc">Activities and societies: REECE Engineering, Form Captain, Law Club. A-Levels: Maths A*, Further Maths A*, Chemistry A*.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- HOBBIES -->
+        <section class="p-section" id="hobbies">
+            <p class="p-section-label">Hobbies</p>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:1rem;">The hobby I invest the most time into is golf. I am a +2 handicap and really enjoy playing in local amateur competitions at weekends. I grew up representing the Northumberland county junior team and have since progressed into representing the Men's team.</p>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7; margin-bottom:1rem;">I also enjoy reading books around areas complementary to building products, such as marketing and sales. My favourite reads so far in 2026 are <em>Contagious: How to Build Word of Mouth in the Digital Age</em>, which provides a great framework for why people talk about certain things but not others, and <em>Shoe Dog</em> by Phil Knight, the founder of Nike.</p>
+            <p style="font-size:0.9rem; color:var(--text-muted); line-height:1.7;">I have also just resurrected my dad's old Canon DSLR and am trying to learn the basic principles of how cameras work and how to take great photographs, although there is a lot more to it than I thought.</p>
+        </section>
+
+    </main>
+    </div><!-- /.row -->
+</div><!-- /.portfolio -->
+
+<footer class="footer">
+    <p>&copy; 2026 JC</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const sections = document.querySelectorAll('.p-section');
+    const navLinks = document.querySelectorAll('.p-nav-link');
+    const panelEl  = document.getElementById('main-scroll');
+
+    function updateActiveLink(scrollTop) {
+        let current = '';
+        sections.forEach(sec => {
+            if (scrollTop >= sec.offsetTop - 140) current = sec.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+        });
+    }
+
+    // Desktop: right panel scrolls in its own overflow container
+    panelEl.addEventListener('scroll', () => updateActiveLink(panelEl.scrollTop));
+    // Mobile: whole page scrolls via window
+    window.addEventListener('scroll', () => updateActiveLink(window.scrollY));
+</script>
+</body>
+</html>
