@@ -288,8 +288,7 @@ PAGE = """<!DOCTYPE html>
         <h2 class="lp-h2">Tell Me What's Eating Your Week.</h2>
         <p class="lp-lead">Fill this in (60 seconds) and I'll reply within one working day to book your free 30-minute call. No pitch, no pressure.</p>
         <div class="lp-form-wrap">
-            <!-- Create your form at https://formspree.io and replace YOUR_FORM_ID below -->
-            <form class="lp-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form class="lp-form" action="https://formspree.io/f/xdavwqzr" method="POST">
                 <div>
                     <label for="name">Your name</label>
                     <input type="text" id="name" name="name" required placeholder="Jane Smith">
