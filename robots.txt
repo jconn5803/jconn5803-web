@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jconn5803.github.io/jconn5803-web/sitemap.xml
