@@ -158,6 +158,7 @@ PAGE = """<!DOCTYPE html>
         <div class="lp-nav-links">
             <a href="../index.html#offers">What I Do</a>
             <a href="../index.html#how">How It Works</a>
+            <a href="../blog/index.html">Blog</a>
             <a href="../portfolio.html">Portfolio</a>
             <a href="#contact" class="btn-cta">Book Your Free Call</a>
         </div>
@@ -330,6 +331,7 @@ PAGE = """<!DOCTYPE html>
         <p>&copy; 2026 James Conn &middot; AI &amp; Business Automation, UK</p>
         <div class="lp-footer-links">
             <a href="../index.html">Home</a>
+            <a href="../blog/index.html">Blog</a>
             <a href="../portfolio.html">Portfolio &amp; CV</a>
             <a href="https://linkedin.com/in/conn" target="_blank">LinkedIn</a>
             <a href="https://github.com/jconn5803" target="_blank">GitHub</a>
